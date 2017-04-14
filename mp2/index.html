@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href= "jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+ <script src= "jquery-1.11.3.min.js"></script>
+    
+  <!-- Include the jQuery Mobile library -->
+ <script src= "jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>TeaChair</h1>
+  </div>
+    
+    <a href="#pagetwo" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-left">Add Class</a>
+    <hr>
+    
+
+  <a href="#pagethree" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-left">10:30-12:00 MTh</a>
+    <a href="#pagefour" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-left">1:00-2:00 MWF</a>
+
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div> 
+    
+    <div data-role="page" data-dialog="true" id="pagetwo">
+  <div data-role="header">
+    <h1>Add Class!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Choose your layout</p>
+    <a href="#pageone">Laboratory</a>
+      <a href="pageone">Classroom</a>
+      <p> or download available layout</p>
+      <a href="pageone">blsh bldf</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text In Dialog</h1>
+  </div>
+</div> 
+    
+    <div data-role="page" id="pagethree">
+    <p>Laboratory lay-out here!</p>
+    </div>
+    
+    <div data-role="page" id="pagefour">
+    <p>classroom layout here</p>
+        
+        <div data-role="page" id="pagefour">
+        <p>Laboratory layout here!</p>
+        </div>
+    </div>
+
+</body>
+</html>
