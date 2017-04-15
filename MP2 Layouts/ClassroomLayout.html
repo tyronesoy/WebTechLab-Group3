@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+  <canvas id="mycanvas" width="100%" height="100%" style="border:solid 1px #000000;"></canvas>
+          
+          <div>
+    <button onclick="showFillText();return true;" >Fill Text</button>
+      </div>
+      
+    <script>
+       var canvas = document.getElementById('mycanvas');
+        var ctx = canvas.getContext('2d');
+        
+      var imgData = ctx.getImageData(0,0, canvas.width, canvas.height);
+        
+    // Set canvas dimensions
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+        
+  function showFillText() {
+  ctx.fillStyle = '#f00';
+  ctx.font = 'italic bold 10px sans-serif';
+  ctx.textBaseline = 'bottom';
+  ctx.fillText('HTML5 is cool!', 20, 50);
+  }
+  ctx.strokeRect(400,25,80,80, "#333");
+        
+  ctx.strokeRect(25, 130, 80, 80, "#333");
+  ctx.strokeRect(25, 230, 80, 80, "#333");
+  ctx.strokeRect(25, 330, 80, 80, "#333");
+  ctx.strokeRect(25, 430, 80, 80, "#333");
+  ctx.strokeRect(25, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(105, 130, 80, 80, "#333");
+  ctx.strokeRect(105, 230, 80, 80, "#333");
+  ctx.strokeRect(105, 330, 80, 80, "#333");
+  ctx.strokeRect(105, 430, 80, 80, "#333");
+  ctx.strokeRect(105, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(185, 130, 80, 80, "#333");
+  ctx.strokeRect(185, 230, 80, 80, "#333");
+  ctx.strokeRect(185, 330, 80, 80, "#333");
+  ctx.strokeRect(185, 430, 80, 80, "#333");
+  ctx.strokeRect(185, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(265, 130, 80, 80, "#333");
+  ctx.strokeRect(265, 230, 80, 80, "#333");
+  ctx.strokeRect(265, 330, 80, 80, "#333");
+  ctx.strokeRect(265, 430, 80, 80, "#333");
+  ctx.strokeRect(265, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(345, 130, 80, 80, "#333");
+  ctx.strokeRect(345, 230, 80, 80, "#333");
+  ctx.strokeRect(345, 330, 80, 80, "#333");
+  ctx.strokeRect(345, 430, 80, 80, "#333");
+  ctx.strokeRect(345, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(460, 130, 80, 80, "#333");
+  ctx.strokeRect(460, 230, 80, 80, "#333");
+  ctx.strokeRect(460, 330, 80, 80, "#333");
+  ctx.strokeRect(460, 430, 80, 80, "#333");
+  ctx.strokeRect(460, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(540, 130, 80, 80, "#333");
+  ctx.strokeRect(540, 230, 80, 80, "#333");
+  ctx.strokeRect(540, 330, 80, 80, "#333");
+  ctx.strokeRect(540, 430, 80, 80, "#333");
+  ctx.strokeRect(540, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(620, 130, 80, 80, "#333");
+  ctx.strokeRect(620, 230, 80, 80, "#333");
+  ctx.strokeRect(620, 330, 80, 80, "#333");
+  ctx.strokeRect(620, 430, 80, 80, "#333");
+  ctx.strokeRect(620, 530, 80, 80, "#333");
+           
+  ctx.strokeRect(700, 130, 80, 80, "#333");
+  ctx.strokeRect(700, 230, 80, 80, "#333");
+  ctx.strokeRect(700, 330, 80, 80, "#333");
+  ctx.strokeRect(700, 430, 80, 80, "#333");
+  ctx.strokeRect(700, 530, 80, 80, "#333");
+        
+  ctx.strokeRect(780, 130, 80, 80, "#333");
+  ctx.strokeRect(780, 230, 80, 80, "#333");
+  ctx.strokeRect(780, 330, 80, 80, "#333");
+  ctx.strokeRect(780, 430, 80, 80, "#333");
+  ctx.strokeRect(780, 530, 80, 80, "#333");
+        
+            </script>>
