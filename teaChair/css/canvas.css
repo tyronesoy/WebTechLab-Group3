@@ -1,0 +1,19 @@
+div#container {
+    padding: 30px;
+    font-family: 'verdana', lucida;
+}
+input {
+    background-color: #ccc;
+    padding: 10px 20px;
+    width: 360px;
+    color: #777;
+}
+a{
+    color: #777;
+    display: block;
+    background-color: #ccc; 
+    width: 360px;
+    padding: 10px 20px;
+    margin-top: 2px;
+    text-decoration:none;
+}
