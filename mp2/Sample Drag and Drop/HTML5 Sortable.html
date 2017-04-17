@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://farhadi.ir/projects/html5sortable/#demos -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>HTML5 Sortable</title>
+  </head>
+  <body>
+	<header id="header">
+
+
+<section id="demos">
+	<h1>Demos</h1>
+	<style>
+		#demos section {
+			overflow: hidden;
+		}
+		.sortable {
+			width: 310px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.sortable.grid {
+			overflow: hidden;
+		}
+		.sortable li {
+			list-style: none;
+			border: 1px solid #CCC;
+			background: #F6F6F6;
+			color: #1C94C4;
+			margin: 5px;
+			padding: 5px;
+			height: 22px;
+		}
+		.sortable.grid li {
+			line-height: 80px;
+			float: left;
+			width: 80px;
+			height: 80px;
+			text-align: center;
+		}
+		.handle {
+			cursor: move;
+		}
+		.sortable.connected {
+			width: 200px;
+			min-height: 100px;
+			float: left;
+		}
+		li.disabled {
+			opacity: 0.5;
+		}
+		li.highlight {
+			background: #FEE25F;
+		}
+		li.sortable-placeholder {
+			border: 1px dashed #CCC;
+			background: none;
+		}
+	</style>
+    
+    
+    <p id="demo"></p>
+
+<script>
+    
+    function getArray(){
+    return $.getJSON('sample.json');
+}
+
+getArray().done(function(json) {
+    // now you can use json
+    var questions = [];
+    $.each(json, function(key, val) {
+        questions[key] = { Category: val.Category };
+    });
+});
+    
+
+</script>
+
+	<section>
+        <canvas id="imageCanvas">
+		<h1>Sortable Grid</h1>
+		<ul id="sortable2" class="sortable grid">
+			<li draggable="true" class="" style="display: list-item;">Item 4
+			</li><li draggable="true">Item 2
+			</li><li draggable="true" class="" style="display: list-item;">Item 3
+			</li><li draggable="true" class="" style="display: list-item;">Item 1
+			</li><li draggable="true" class="" style="display: list-item;">Item 5
+			</li><li draggable="true" class="" style="display: list-item;">Item 6
+		</li></ul>
+        </canvas>
+    
+	</section>
+
+	<script src="./HTML5 Sortable_files/jquery-1.7.1.min.js.download"></script>
+	<script src="./HTML5 Sortable_files/jquery.sortable.js.download"></script>
+	<script>
+		$(function() {
+			$('#sortable1, #sortable2').sortable();
+			$('#sortable3').sortable({
+				items: ':not(.disabled)'
+			});
+			$('#sortable-with-handles').sortable({
+				handle: '.handle'
+			});
+			$('#sortable4, #sortable5').sortable({
+				connectWith: '.connected'
+			});
+		});
+	</script>
+</section>
+
+	<link rel="stylesheet" href="./HTML5 Sortable_files/solarized.css"><script src="./HTML5 Sortable_files/highlight.min.js.download"></script><script type="text/javascript">
+		if (window.hljs) {
+			hljs.tabReplace = '    ';
+			hljs.initHighlightingOnLoad();
+		}
+		var _gaq=[['_setAccount','UA-445571-1'],['_trackPageview']];
+		(function(d) {
+			var g = d.createElement('script');
+			g.src = '//www.google-analytics.com/ga.js';
+			d.body.appendChild(g);
+			window.addEventListener('scroll', function() {
+				var nav = d.querySelector('#header nav');
+				var scrollTop = window.pageYOffset || d.body.scrollTop;
+				nav.style.top = Math.min(d.body.offsetHeight - 280, Math.max(scrollTop, 120)) + 'px';
+			}, false);
+		}(document));
+	</script><script src="./HTML5 Sortable_files/ga.js.download"></script>
+  
+
+</body></html>
